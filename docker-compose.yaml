@@ -1,0 +1,36 @@
+version: "3.3"
+
+services:
+  grafana:
+    image: grafana/grafana-oss:10.3.1
+    container_name: grafana
+    networks:
+      - grafana
+    volumes:
+      - grafana:/var/lib/grafana
+      - ./config/grafana/grafana.ini:/etc/grafana/grafana.ini
+      - ./config/grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards
+      - ./config/grafana/provisioning/datasources:/etc/grafana/provisioning/datasources
+    ports:
+      - '9000:3000'
+    environment:
+      GF_SECURITY_ADMIN_USER: user
+      GF_SECURITY_ADMIN_PASSWORD: password
+  prometheus:
+    image: prom/prometheus:v2.49.1
+    volumes:
+      - ./config/prometheus/:/etc/prometheus/
+      - prometheus:/prometheus
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+    ports:
+      - 9090:9090
+    networks:
+      - grafana
+
+volumes:
+  grafana:
+  prometheus:
+networks:
+  grafana:

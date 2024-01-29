@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "m/BAdxtsAFhIigkvBKvAGLq5imPKMSkntAlJnpTtd8Q=",
+  "Source": "ada-monitoring",
+  "BasePath": "_content/ada-monitoring",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
