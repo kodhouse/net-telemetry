@@ -42,7 +42,7 @@ public class AswMetrics
         ToplamSunucuGauge = meter.CreateObservableGauge<int>("toplam-sunucu-adedi", () => toplamSunucu);
         LogBulunanSunucuGauge = meter.CreateObservableGauge<int>("log-bulunan-sunucu-adedi", () => logBulunanSunucu);
         //MaxBekleyenIstekGauge = meter.CreateObservableGauge<int>("max-bekleyen-istek", () => maxBekleyenIstek, new KeyValuePair<string, string>("label1", "lll"));
-        MaxBekleyenIstekGauge = meter.CreateObservableGauge<int>("max-bekleyen-istek", () => maxBekleyenIstek, new KeyValuePair<string, string>("label1", "lll"));
+        MaxBekleyenIstekGauge = meter.CreateObservableGauge<int>("max-bekleyen-istek", () => maxBekleyenIstek);
         MaxCpuGauge = meter.CreateObservableGauge<double>("max-cpu", () => maxCpu);
         MaxRamGauge = meter.CreateObservableGauge<double>("max-ram", () => maxRam);
         
