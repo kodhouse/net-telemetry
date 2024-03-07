@@ -1,0 +1,116 @@
+{
+    "TarihBaslangic": "2024-02-29T14:55:24.2346737+03:00",
+    "TarihBitis": "2024-02-29T14:56:24.2346737+03:00",
+    "AswMetrics": {
+        "ToplamSunucuAdedi": 4,
+        "LogBulunanSunucuAdedi": 4,
+        "MaxBekleyenIstek": 1,
+        "MaxCPU": 17.0,
+        "MaxRAM": 31.0,
+        "MaxBekleyenIstekSunucuAdi": "ADA-1",
+        "MaxCPUSunucuAdi": "ADA-1",
+        "MaxRAMSunucuAdi": "ADA-4",
+        "TumSunucularHttpIstekAdet": 5177,
+        "Hatalar": [
+            {
+                "Baslik": "ASWRuntime.ASW_Application_Error -The file '/WebServisleri/hata.aspx' does not exist.",
+                "Adet": 6
+            },
+            {
+                "Baslik": "ASWRuntime.ASW_Application_Error -Request format is unrecognized.",
+                "Adet": 1
+            }
+        ],
+        "SunucuBilgi": [
+            {
+                "SunucuAdi": "ADA-1",
+                "HttpIstekAdet": 2187,
+                "LogAdetCpuRamIis": 9,
+                "LogAdetGuncelleme": 0,
+                "MaxBekleyenIstek": 1,
+                "MaxCPU": 17.0,
+                "MaxRAM": 29.0,
+                "SunucularListesindeVar": true
+            },
+            {
+                "SunucuAdi": "ADA-2",
+                "HttpIstekAdet": 1620,
+                "LogAdetCpuRamIis": 11,
+                "LogAdetGuncelleme": 0,
+                "MaxBekleyenIstek": 1,
+                "MaxCPU": 9.0,
+                "MaxRAM": 24.0,
+                "SunucularListesindeVar": true
+            },
+            {
+                "SunucuAdi": "ADA-4",
+                "HttpIstekAdet": 1358,
+                "LogAdetCpuRamIis": 9,
+                "LogAdetGuncelleme": 0,
+                "MaxBekleyenIstek": 1,
+                "MaxCPU": 13.0,
+                "MaxRAM": 31.0,
+                "SunucularListesindeVar": true
+            },
+            {
+                "SunucuAdi": "ADA-3",
+                "HttpIstekAdet": 12,
+                "LogAdetCpuRamIis": 11,
+                "LogAdetGuncelleme": 0,
+                "MaxBekleyenIstek": 0,
+                "MaxCPU": 2.0,
+                "MaxRAM": 17.0,
+                "SunucularListesindeVar": true
+            }
+        ],
+        "RaporUygulamasiYanitVeriyor": true
+    },
+    "DBMetrics": {
+        "AnlikSorguAdet": 7,
+        "SqlServerCPUOrtalama": 0.0,
+        "OtherProcessCPUOrtalama": 0.0,
+        "ToplamSunucuCPUOrtalama": 0.0,
+        "BatchRequestPerSecondOrtalama": 0.0,
+        "DbaVeritabaniVar": false,
+        "Notlar": [],
+        "Replicalar": [
+            {
+                "SubscriberDb": "ASWReplica1",
+                "Latency": 1
+            },
+            {
+                "SubscriberDb": "ASWReplica2",
+                "Latency": 1
+            }
+        ]
+    },
+    "SigortaMetrics": {
+        "SigortaDakikadaOrtalamaKayitAdedi": 61.0,
+        "SigortaDakikadaOrtalamaKayitAdediOncekiSaat": 64.0,
+        "SigortaDakikadaOrtalamaKayitAdediOncekiGun": 60.0,
+        "SigortaDakikadaOrtalamaPoliceZeyilAdedi": 2.0,
+        "SigortaDakikadaOrtalamaPoliceZeyilAdediOncekiSaat": 3.0,
+        "SigortaDakikadaOrtalamaPoliceZeyilAdediOncekiGun": 6.0,
+        "SbmTrafikTeklifTalepMetrics": {
+            "SonIstekBasariliYanitlanmis": true,
+            "SonBesDakikaTalepAdet": 37,
+            "SonBesDakikaBasariliTalepAdet": 34,
+            "SonBesDakikaBasarisizTalepAdet": 3
+        },
+        "Notlar": [],
+        "SbmGonderilenIstekMetrics": []
+    },
+    "BilgilendirmeMetrics": {
+        "OlusturulanEPostaAdedi": 3,
+        "OlusturulanSMSAdedi": 0,
+        "GonderilenEPostaAdedi": 0,
+        "GonderilenSMSAdedi": 0,
+        "EsikDakikaOncesiYaratilmisAmaGonderimDenenmemisEPostaAdedi": 0,
+        "EsikDadikaOncesiYaratilmisAmaGonderimDenenmemisSMSAdedi": 0,
+        "EsikDakika": 60
+    },
+    "GenelSaglikKontrolSonucu": {
+        "HerseyYolunda": true,
+        "Sorunlar": []
+    }
+}
