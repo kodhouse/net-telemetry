@@ -23,9 +23,20 @@ var meterProvider = Sdk.CreateMeterProviderBuilder()
     .AddPrometheusExporter()
     .Build();
 
+var meterProvider2 = Sdk.CreateMeterProviderBuilder()
+// Metrics provider from OpenTelemetry
+    .AddAspNetCoreInstrumentation()
+    .AddMeter(greeterMeter.Name)
+    // Metrics provides by ASP.NET Core in .NET 8
+    .AddMeter("Microsoft.AspNetCore.Hosting")
+    .AddMeter("Microsoft.AspNetCore.Server.Kestrel")
+    .AddPrometheusExporter()
+    .Build();
+
 builder.Services.AddSingleton(meterProvider);
 var app = builder.Build();
-app.UseOpenTelemetryPrometheusScrapingEndpoint();
+app.UseOpenTelemetryPrometheusScrapingEndpoint(meterProvider, null, "/asw-metrics", null, null);
+app.UseOpenTelemetryPrometheusScrapingEndpoint(meterProvider2, null, "/db-metrics", null, null);
 
 // Other middleware...
 
