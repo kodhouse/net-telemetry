@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UDVbP1kRQ3pOh4s0FU6WF0D9WTlWgLxG8A6A+TK0owQ=",
+  "Source": "MetricAggregator",
+  "BasePath": "_content/MetricAggregator",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
